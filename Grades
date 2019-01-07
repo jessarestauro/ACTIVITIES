@@ -4,8 +4,9 @@
 	<title>Grades</title>
 </head>
 <body>
-		<input type="text" id="scores" placeholder="Enter your grade">
-			<input type="button" value="Calculate" onclick="grades()">
+	<label>Enter Grade </label>
+		<input type="text" id="scores">
+			<input type="button" value="Process" onclick="grades()">
 
 
 		<h1>Remarks:</h1><h2 id="answer"></h2>
@@ -24,19 +25,19 @@
 
 	if (grade > 94)
 	{
-		document.getElementById("answer").innerHTML = "Excellent!";
+		document.getElementById("answer").innerHTML = "Excellent";
 	}
 	else if (grade > 84)
 	{
-		document.getElementById("answer").innerHTML = "Very Good!";
+		document.getElementById("answer").innerHTML = "Very Good";
 	}
 	else if (grade > 79)
 	{
-		document.getElementById("answer").innerHTML = "Good!";
+		document.getElementById("answer").innerHTML = "Good";
 	}
 	else if (grade > 74)
 	{
-		document.getElementById("answer").innerHTML = "Nice!";
+		document.getElementById("answer").innerHTML = "Nice";
 	}
 	else if (grade > 64)
 	{
