@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<label>Enter Amount:</label>
+		<input type="text" id="result">
+			<input type="button" value="OK" onclick="Divisible()">
+
+<script type="text/javascript">
+
+	function Divisible()
+{
+	
+	var value1 = Number(document.getElementById('result').value);
+	if  (isNaN(value1) == true)
+	{
+		alert('NaN');
+	}
+	else
+	{
+		if (value1 % 100 == 0)
+		{
+			alert('AMOUNT ACCEPTED');
+		}
+		else
+		{
+			alert('AMOUNT NOT ACCEPTED');
+		}
+	}
+
+}
+
+
+</script>			
+</body>
+</html>
