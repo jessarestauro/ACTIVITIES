@@ -22,16 +22,16 @@
 		<br>
 		<br>
 		<label>AGE:</label>
-		<input type="" name=""><br>
+		<input type="text" name="" id="age"><br>
 		<label>GENDER</label>
-		<input type="radio" name="gender" value="MALE" checked="checked">MALE
+		<input type="radio" name="gender" value="MALE">MALE
 		<input type="radio" name="gender" value="FEMALE">FEMALE
 		<br>
 		<br>
 		<label>STATUS:</label>
-		<input type="radio" name="status"value="Single"checked="checked">SINGLE
-		<input type="radio" name="status"value="Married">MARRIED
-		<input type="radio" name="status"value="IT'S COMPLICATED">IT'S COMPLICATED
+		<input type="radio" name="status" value="Single">SINGLE
+		<input type="radio" name="status" value="Married">MARRIED
+		<input type="radio" name="status" value="IT'S COMPLICATED">IT'S COMPLICATED
 		<br>
 		<br>
 		<label>INTERESTED IN:</label>
@@ -40,7 +40,7 @@
 		<br>
 		<input type="checkbox" name="interested" value="BLOGGING">BLOGGING
 		<br>
-		<input type="checkbox" name=interested" value="PHOTOGRAPHY">PHOTOGRAPHY
+		<input type="checkbox" name="interested" value="PHOTOGRAPHY">PHOTOGRAPHY
 		<br>
 		<input type="checkbox" name="interested" value="DESIGNING">DESIGNING
 		<br>
@@ -51,7 +51,7 @@
 		<hr>
 
 
-		<h1>Output:</h1>
+		<h1>Check:</h1>
 		<h2 id="Out"></h2>
 		<h2 id="Out1"></h2>
 		<h2 id="Out2"></h2>
@@ -88,12 +88,17 @@
  		document.getElementById('Out3').innerHTML = "Strand: "+selected;
  	}
 
+ 	var Aage = document.getElementById('age');
+ 	{
+ 		document.getElementById('Out4').innerHTML = "Age: "+age.value;
+ 	}
+
  	var G = document.getElementsByName('gender');
 		for (var i = 0; i < G.length; i++)
 		{
 			if (G[i].checked)
 			{
-				document.getElementById('Out4').innerHTML = "Gender: "+ G[i].value;
+				document.getElementById('Out5').innerHTML = "Gender: "+ G[i].value;
 				break;
 			}
 
@@ -104,7 +109,7 @@
 		{
 			if (S[j].checked)
 			{
-				document.getElementById('Out5').innerHTML = "Status: "+ S[j].value;
+				document.getElementById('Out6').innerHTML = "Status: "+ S[j].value;
 			}
 		}
 
@@ -119,11 +124,12 @@
 			}
 
 			}
-			document.getElementById('Out6').innerHTML = "Interested In: "+selected;
+			document.getElementById('Out7').innerHTML = "Interested In: "+selected;
 			}
 
 
 
 	
 </script>
+</body>
 </html>
