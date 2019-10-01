@@ -1,0 +1,37 @@
+package javajess;
+import java.util.Scanner;
+
+public class Main {
+
+  
+    static Scanner in = new Scanner (System.in);
+    public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.print("Enter your name: ");
+        String loaner = in.nextLine();
+        System.out.println("Your name is " + loaner);
+
+        System.out.print("Product purchase: ");
+        String purchase = in.nextLine();
+        System.out.println("Your Product is " + purchase);
+
+        System.out.print("Product Price: ");
+        double price = in.nextDouble();
+        System.out.println("The product price is " + price);
+
+        System.out.print("Downpayment: ");
+        double down = in.nextDouble();
+        System.out.println("Your downpayment is " + down);
+
+        System.out.print("Months to pay: ");
+        int months = in.nextInt();
+        System.out.println("Your months to pay is " + months + " months");
+
+        double downint = down * 0.052;
+        double downmonth = down / months;
+        double fullpayment = downmonth + downint;
+         System.out.println("Your payment per month is " + fullpayment);
+
+    }
+
+}
